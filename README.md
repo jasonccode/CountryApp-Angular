@@ -1,27 +1,42 @@
 # CountryAppAngular
+# Aplicación de Países con Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Bienvenido a la documentación de nuestra aplicación Angular centrada en proporcionar sugerencias de países y aplicar optimizaciones clave. Esta aplicación utiliza la API https://restcountries.com. A continuación, resumimos los temas fundamentales que explore en el desarrollo de esta aplicación.
 
-## Development server
+## Temas Fundamentales
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 1. Estructura y Modularización
+Organizamos la aplicación de manera modular para mejorar la mantenibilidad y escalabilidad del código.
 
-## Code scaffolding
+## 2. Componentes Reutilizables
+Utilizamos componentes especializados para dividir la interfaz de usuario y fomentar la reutilización de código.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 3. Optimizaciones de Rutas
+Implementamos enrutamiento eficiente mediante RouterLink y RouterLinkActive para una navegación fluida.
 
-## Build
+## 4. Manipulación de Clases
+Exploramos diferentes formas de manipular clases con ngClass y CSS condicionales.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 5. Optimizaciones HTTP
+Aplicamos optimizaciones a las peticiones HTTP para mejorar el rendimiento de la aplicación.
 
-## Running unit tests
+## 6. Debounce Manual con RxJs
+Implementamos debounce manual mediante RxJs para manejar consultas y mantener el estado de las búsquedas.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 7. LocalStorage
+Utilizamos LocalStorage para almacenar información localmente y mejorar la experiencia del usuario.
 
-## Running end-to-end tests
+## 8. Store y Tipado de Datos
+Exploramos ideas de Store para gestionar el estado de la aplicación y aplicamos tipado de datos.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 9. Consumo de API RestCountries
+Realizamos peticiones HTTP a la API RestCountries para obtener datos actualizados sobre países.
 
-## Further help
+## 10. Animaciones y Mejoras Visuales
+Añadimos animaciones mediante CSS para mejorar la experiencia visual de la aplicación.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 11. Autocompletar y Sugerencias de Países
+Implementamos una funcionalidad de autocompletar utilizando ngClass y CSS condicionales para mostrar sugerencias de países mientras el usuario escribe. 
+
+## 12. Lazy Loading para Carga Eficiente de Módulos
+Implementamos Lazy Loading para cargar módulos de manera eficiente en nuestra aplicación Angular. Exploramos cómo dividir la aplicación en módulos más pequeños y cargarlos solo cuando sea necesario, mejorando así los tiempos de carga inicial y reduciendo la cantidad de recursos utilizados.
