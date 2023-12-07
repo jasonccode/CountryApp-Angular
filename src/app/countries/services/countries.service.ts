@@ -52,11 +52,11 @@ export class CountriesService {
 
   searchCountry(term: string): Observable<Country[]> {
     const url = `${this.apiUrl}/name/${term}`;
-    return this.getCountriesRequest(url).pipe(
-      tap(
-        (countries) => (this.cacheStore.byCountries = { term, countries }),
+    return this.getCountriesRequest(url)
+    .pipe(
+      tap(countries => this.cacheStore.byCountries = { term, countries }),
         tap(() => this.saveToLocalStorage())
-      )
+
     );
   }
 
@@ -64,9 +64,9 @@ export class CountriesService {
     const url = `${this.apiUrl}/region/${region}`;
     return this.getCountriesRequest(url).pipe(
       tap(
-        (countries) => (this.cacheStore.byRegion = { region, countries }),
+        countries=> this.cacheStore.byRegion = { region, countries }),
         tap(() => this.saveToLocalStorage())
-      )
+      
     );
   }
 }
