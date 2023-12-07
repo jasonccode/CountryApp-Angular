@@ -1,4 +1,4 @@
-# CountryAppAngular
+# CountryApp-Angular
 # Aplicación de Países con Angular
 
 Bienvenido a la documentación de nuestra aplicación Angular centrada en proporcionar sugerencias de países y aplicar optimizaciones clave. Esta aplicación utiliza la API https://restcountries.com. A continuación, resumimos los temas fundamentales que explore en el desarrollo de esta aplicación.
@@ -40,3 +40,6 @@ Implementamos una funcionalidad de autocompletar utilizando ngClass y CSS condic
 
 ## 12. Lazy Loading para Carga Eficiente de Módulos
 Implementamos Lazy Loading para cargar módulos de manera eficiente en nuestra aplicación Angular. Exploramos cómo dividir la aplicación en módulos más pequeños y cargarlos solo cuando sea necesario, mejorando así los tiempos de carga inicial y reduciendo la cantidad de recursos utilizados.
+<img width="982" alt="CountryApp" src="https://github.com/jasonccode/CountryApp-Angular/assets/105800226/b5b1f361-de4f-49c3-a75c-258affbe97e4">
+
+
