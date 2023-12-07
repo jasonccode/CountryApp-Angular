@@ -1,4 +1,11 @@
-import { Component, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnDestroy,
+  OnInit,
+  Output,
+} from '@angular/core';
 import { Subject, Subscription, debounceTime } from 'rxjs';
 
 @Component({
@@ -6,11 +13,13 @@ import { Subject, Subscription, debounceTime } from 'rxjs';
   templateUrl: './search-box.component.html',
 })
 export class SearchBoxComponent implements OnInit, OnDestroy {
-
   private debouncer: Subject<string> = new Subject<string>();
   private debouncerSuscription?: Subscription;
   @Input()
   public placeholder: string = '';
+
+  @Input()
+  public initialValue: string = '';
 
   @Output()
   public onValue = new EventEmitter<string>();
